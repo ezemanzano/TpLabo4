@@ -1,0 +1,22 @@
+<div class="background-wrap">
+    <div class="background"></div>
+  </div>
+  
+  <form id="accesspanel" action="login" method="post">
+    <h1 id="litheader">Sala de juegos</h1>
+    <div class="inset" style="justify-content: center; align-items: center; display: flex; flex-direction: column;">
+      <p>
+        <input type="text" name="username" id="email" placeholder="Email address">
+      </p>
+      <p>
+        <input type="password" name="password" id="password" placeholder="Contraseña">
+      </p>
+      
+    <button  [routerLink]="['/profile']"  style="background-color: #ff0037; width: 100px; height: 50px;border-radius: 10px; margin-top: 10px; box-shadow: 4px; font-family: Audiowide;" > LOG IN </button>
+
+    </div>
+
+  </form>
+
+  
+<router-outlet></router-outlet>
